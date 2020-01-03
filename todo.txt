@@ -1,0 +1,14 @@
+JWT
+
+POST req for Save newSuite
+
+new suite:
+ -btn center
+ -logic
+ -fn newSuite 
+
+Run All in suite
+
+---Save this for if I move it to React 
+Checkmarks by Suites?
+Run All Suites button?

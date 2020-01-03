@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/custom.css" rel="stylesheet">
+    <link href="./css/sidebar.css" rel="stylesheet">
+    <title>API Testing</title>
+</head>
+
+<!--Jumbotron-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- <button type="button" id="sidebarCollapse" class="btn btn-info">
+                <i class="fas fa-align-left"></i>
+                <span>Toggle Sidebar</span>
+            </button> -->
+    <a class="navbar-brand">REST API Testing</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <button class="btn-primary" id="Login">Login</button>
+        </ul>
+    </div>
+
+</nav>
+
+<!-- Main Content-->
+<div class="wrapper">
+    <!-- Sidebar -->
+    <nav id="sidebar">
+        <div class="sidebar-header">
+            <h4>UserInfo</h4>
+        </div>
+        <div class="sidebar-header">
+            <p>Test Suites</p>
+        </div>
+        <ul id="Suites" class="list-unstyled components">
+        </ul>
+        <div class="row sidebar-addSuite">
+            <div class="col-8 text-muted sidebar-addSuite-input" contenteditable="true" spellcheck="false">New Suite
+            </div>
+            <i id="sidebar-addSuite-btn" class="fas fa-plus plus"></i>
+        </div>
+    </nav>
+
+    <body id="bootstrap-overrides">
+
+        <P></P>
+        <div class="container">
+            <div id="Suite">
+                <div class="row">
+                    <h2 id="SuiteName" class="col-3 text-left" style="padding-left: 0px;" contenteditable="true"
+                        spellcheck="false">Test
+                        Suite</h2>
+
+                </div>
+                <div class="row">
+                    <form class="needs-validation col-6" style="padding-left: 0px;" novalidate>
+                        <div class="form-row">
+                            <input id="baseURI" class="form-control form-control-lg" type="text"
+                                placeholder="http://localhost:8081">
+                            <div class="invalid-feedback">
+                                Please provide a valid base uri beginning with http:// or https://.
+                            </div>
+                        </div>
+                    </form>
+                    <div class="col-3"></div>
+                    <button class="col-3 btn-primary " id="DeleteSuite">Delete Suite</button>
+                    <div class="col-3"></div>
+                    <button class="col-3 btn-primary " id="Save">Save / Create Account</button>
+                </div>
+                <P></P>
+                <div class="row">
+                    <button class="btn-primary" id="All">Run All in Suite</button>
+                    <button class="btn-primary" id="test">Dev Tests</button>
+                    <button class="btn-primary" id="SuitesInfo">SuitesInfo</button>
+                </div>
+
+                <p></p>
+                <div class="row">
+                    <table class="table table-dark">
+                        <thead>
+                            <tr class="text-dark">
+                                <th colspan="1" class="text-center"></th>
+                                <th colspan="2" class="table-light text-center">Response Codes</th>
+                                <th colspan="9" class="table-secondary text-center">Input</th>
+                            </tr>
+                            <tr>
+                                <th class="text-center">Pass?</th>
+                                <th class="text-center">Actual</th>
+                                <th class="text-center">Expect</th>
+                                <th class="text-center border-left border-right border-secondary">Run</th>
+                                <th>Name</th>
+                                <th>Method</th>
+                                <th>Path</th>
+                                <th>Req Body</th>
+                                <th>Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody">
+                        </tbody>
+                    </table>
+                </div>
+                <div class="row">
+                    <button id="AddTest" class="btn-primary">Add Test</button>
+                </div>
+            </div>
+        </div>
+</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/b746f274e7.js" crossorigin="anonymous"></script>
+<script src="index.js"></script>
+
+</html>

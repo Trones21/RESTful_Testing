@@ -1,0 +1,91 @@
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 100vh;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+}
+
+body {
+    font-family: '', sans-serif;
+    background: #fafafa;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+
+a, a:hover, a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+#sidebar {
+    /* don't forget to add all the previously mentioned styles here too */
+    background: #1d1f20;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#sidebar .sidebar-header {
+    padding: 10px;
+    background: #1d1f20;
+}
+
+#sidebar ul.components {
+    padding: 10px;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul .active {
+    color:rgb(24, 111, 151);
+    font-weight: bold;
+}
+
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar .sidebar-addSuite{
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-right: 10px;
+    font-size: 1.1em;
+}
+
+#sidebar .sidebar-addSuite-input{
+    padding: 10px;
+    font-size: 1.1em;
+}
+
+#sidebar ul li:hover {
+    background:rgb(24, 111, 151);
+}
+
+#sidebar ul li.active:hover {
+    background:gray
+}

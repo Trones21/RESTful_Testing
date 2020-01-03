@@ -1,0 +1,19 @@
+.wrapper {
+        display: flex;
+        width: 100%;
+        align-items: stretch;
+}
+button {cursor:pointer;}
+
+#bootstrap-overrides .noClick {cursor: auto;}
+
+i.fas {color: white;}
+i.fas.isClickable:hover{color: red;
+        cursor: pointer;}
+
+
+i.fas.good{color: green;}
+i.fas.bad{color: red;}
+
+i.plus{color:gray}
+i.plus:hover{color:green}
