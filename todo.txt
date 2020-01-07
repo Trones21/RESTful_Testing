@@ -4,11 +4,29 @@ POST req for Save newSuite
 
 new suite:
  -btn center
- -logic
- -fn newSuite 
 
-Run All in suite
+Suite:
+-Center actual and expect columns
+-Make the SuiteName on side and on top match
+
+Test:
+-delete Test - Write to DB
+
+Btns:
+-"Run All in suite" btn
+- Fix css so that the background fade goes away automatically (instead of clicking twice)
+ 
+Auto Retrieve Suites on Login  (& remove my dev btn)
+
+Add option to hide/show full reqBody
+
+Add Warning Pop-up for Delete Suite
+---------
+Write Unit Tests?
 
 ---Save this for if I move it to React 
 Checkmarks by Suites?
 Run All Suites button?
+
+ Other:
+ Add "Save" Pop-up before user closes window (need to understand state to see if there are any changes :( ))
